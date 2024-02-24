@@ -1,43 +1,50 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Helvetica Neue', Arial, sans-serif; /* Changed the font */
     margin: 0;
     padding: 0;
+    background-color: #f0f3f4; /* Changed the background color */
+    display: flex;
+    flex-direction: column;
+    height: auto;  
+    width: 350px; 
+    overflow: hidden;
 }
 
 .container {
-    width: 300px;
-    padding: 20px;
-}
-
-h1 {
-    margin-top: 0;
-}
-
-ul {
-    list-style-type: none;
-    padding: 0;
+    flex-grow: 1;
 }
 
 li {
-    margin-bottom: 10px;
-    cursor: pointer;
-    color: blue;
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff; /* Changed the background color */
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
 }
 
 li:hover {
-    text-decoration: underline;
+    background-color: #f0f0f0; /* Adjusted this color */
 }
 
-li > * {
-    flex: 1;
+li > a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    color: #333;
+    text-decoration: none;
 }
 
-li > *:first-child {
+li > a > .youtube-icon {
+    width: 20px;
     margin-right: 10px;
+    fill: #333;
 }
 
-li > *:last-child {
-    margin-left: 10px;
+li > a > .enter-icon {
+    width: 20px;
+    margin-left: auto;
+    fill: #333;
 }
