@@ -3,7 +3,7 @@
   "name": "YouTube Search Extension",
   "version": "1.0",
   "description": "Search selected text on YouTube",
-  "permissions": ["activeTab", "contextMenus"],
+  "permissions": ["activeTab", "contextMenus", "storage"],
   "background": {
     "service_worker": "background.js"
   },
@@ -17,5 +17,13 @@
     "16": "images/icon16.png",
     "48": "images/icon48.png",
     "128": "images/icon128.png"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/icon16.png",
+      "48": "images/icon48.png",
+      "128": "images/icon128.png"
+    }
   }
 }
